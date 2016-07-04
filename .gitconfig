@@ -38,10 +38,16 @@
   whorank = shortlog -sn --no-merges
   lc = log --graph --decorate --pretty=oneline --abbrev-commit
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  # git log -p
+  # git log origin
   # mostrar todas las ramas (locales y remotas)
   # archivos modificados en un comit
   # ver el que autor modifico el archivo
   # mostrar los ramas merge
+  # Ver un archivo eleminado
+  # git log --diff-filter=D --summary | grep unrestricted.html    busca el archivo elminado
+  # git log --all -- <path-to-file>         para ver el commit
+  #
 [push]
 	default = current
 [pull]
