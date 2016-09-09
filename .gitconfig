@@ -49,7 +49,7 @@
   # Ver un archivo eleminado
   # git log --diff-filter=D --summary | grep unrestricted.html    busca el archivo elminado
   # git log --all -- <path-to-file>         para ver el commit
-  #
+  # git log --follow -p -- filename # Muestra todos los chambios realizados en el archivo
 [push]
 	default = current
 [pull]
