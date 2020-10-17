@@ -125,3 +125,15 @@ Si tu archivo o archivos no estan ratreados te lo mostrara en la seccion de **Un
 ```
   $ git mv [ruta archivo] [ruta destino]
 ```
+
+## Git Workflow
+
+Existen diversas formas manejar git dentro de los equipos, la siguiente lista es solo una de ellas.
+
+1. **git status** Asegúrate de que tu área actual esté limpia.
+2. **git pull** Obtén la última versión desde el control remoto. Esto ahorra problemas de fusión(merge) más tarde.
+3. **Edita tus archivos y haz tus cambios.** ¡Recuerda correr tu linter y hacer pruebas unitarias!
+4. **git status** Encuentra todos los archivos que se cambian. ¡Asegúrate de ver los archivos sin seguimiento también!
+5. **git add [files]** Agregue los archivos modificados al área de preparación (staging area).
+6. **git commit -m "message"** Haz tu nuevo commit.
+7. **git push origin [branch-name]** Empuje sus cambios hasta el repositorio remoto.
