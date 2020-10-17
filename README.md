@@ -1,4 +1,4 @@
-Git
+Comando basicos Git
 ===================
 
 Es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones que sirve para el seguimiento del desarrolo del codigo en versiones.
@@ -94,8 +94,16 @@ Si tu archivo o archivos no estan ratreados te lo mostrara en la seccion de **Un
   $ git checkout master
 ```
 
-**merge branch:** Traemos los cambios de la rama dev a nuestra rama nuevaCaracteristica.
+```
+  $ git checkout -b [nombre branch]
+```
+**merge:** verficar los cambios antes de realizar el commit
 
+```
+  $ git merge origin/desarrollo_20190212 --no-commit --no-ff
+```
+
+**merge branch:** Traemos los cambios de la rama dev a nuestra rama nuevaCaracteristica.
 ```
   (ramaActual)$ git merge [nombre branch con el cual fusionar]
   (nuevaCaracteristica)$ git merge dev
