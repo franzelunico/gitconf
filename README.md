@@ -70,6 +70,9 @@ Modificado (**modified**) significa que has modificado el archivo pero todavía 
 
 Ejemplo (imagen)
 
+![](./imagenes/estados_de_git.png)
+
+
 Si tu archivo o archivos no estan ratreados te lo mostrara en la seccion de **Untracked files:** junto al comando para que se puedan rastrear.
 
 
