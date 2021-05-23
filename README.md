@@ -126,6 +126,12 @@ Si tu archivo o archivos no estan ratreados te lo mostrara en la seccion de **Un
   $ git mv [ruta archivo] [ruta destino]
 ```
 
+**reset soft:** Si queremos eliminar los cambios de Git, pero mantener las modificaciones locales del código. Es útil cuando accidentalmente ha preparado algunos archivos que no pertenecían a la confirmación. Después de reiniciar, puede realizar los cambios necesarios y confirmarlos.  Es útil cuando accidentalmente ha preparado algunos archivos que no pertenecían a la confirmación. Después de reiniciar, puede realizar los cambios necesarios y confirmarlos. Este comando debe usarse antes de sincronizarse con el repositorio remoto (pull, push, etc) para evitar problemas.
+
+```
+  $ git reset --soft HEAD~1
+```
+
 ## Git Workflow
 
 Existen diversas formas manejar git dentro de los equipos, la siguiente lista es solo una de ellas.
