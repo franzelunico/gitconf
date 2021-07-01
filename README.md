@@ -1,7 +1,7 @@
 Comando basicos Git
 ===================
 
-Es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones que sirve para el seguimiento del desarrolo del codigo en versiones.
+Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones que sirve para el seguimiento del desarrolo del codigo en versiones.
 
 ## Instalacion y configuraciones:
 
@@ -41,22 +41,6 @@ git config --global core.autocrlf input
 ```
 
 Otro aspecto importante es la codificación de caracteres lo recomendable es que todos los archivos usen la misma codificacion UTF-8, otra alternativa es Unicode, si no se usa una misma codificacion habran problemas.
-
-## Shortcuts
-
-Configuracion de los shortcuts para:
-  * commit -> ci
-```
-  $ git config --global alias.ci commit
-```
-  * checkout -> co
-```
-  $ git config --global alias.co checkout
-```
-  * status -> st
-```
-  $ git config --global alias.st status
-```
 
 ## Los Tres Estados
 
@@ -143,3 +127,23 @@ Existen diversas formas manejar git dentro de los equipos, la siguiente lista es
 5. **git add [files]** Agregue los archivos modificados al área de preparación (staging area).
 6. **git commit -m "message"** Haz tu nuevo commit.
 7. **git push origin [branch-name]** Empuje sus cambios hasta el repositorio remoto.
+
+
+## Shortcuts
+
+Los shortcuts son atajos de los comandos, son como alias:
+  * status -> st
+```
+  $ git config --global alias.st status
+  $ git st 
+```
+  * commit -> ci
+```
+  $ git config --global alias.ci commit
+  $ git ci
+```
+  * checkout -> co
+```
+  $ git config --global alias.co checkout
+```
+
