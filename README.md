@@ -5,7 +5,9 @@ Git es un software de control de versiones diseñado por Linus Torvalds, pensand
 
 ## Instalacion y configuraciones:
 
-Se tiene instalado git en la maquina local
+Con el gestor de paquetes se puede instalar git, junto con la documentacion.
+
+El gestor de paquetes apt-get es comunmente usado en distrubuciones GNU/Linux basadas en Debian.
 
 ```
   # apt-get install git 
