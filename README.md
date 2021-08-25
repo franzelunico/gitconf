@@ -130,7 +130,36 @@ Existen diversas formas manejar git dentro de los equipos, la siguiente lista es
 6. **git commit -m "message"** Haz tu nuevo commit.
 7. **git push origin [branch-name]** Empuje sus cambios hasta el repositorio remoto.
 
+## Git stash
+Imaginemos este ecenario extremo, estoy trabajando con un equipo sobre una misma rama, llega un bug en produccion y es necesario que lo revise pero no quiero perder el avance sobre la tarea actual.
 
+Stash para guardar nuestros cambios.
+```
+$ git stash save "Avance de tare 75%"
+```
+Listar todo lo almacenado en el stash.
+```
+$ git stash list
+```
+
+Aplicar el stash n sobre la rama actual, sin borrarlo de la lista.
+
+```
+$ git stash apply stash@{n}
+```
+
+Eliminar el stash n.
+
+```
+$ git stash drop stash@{n} 
+```
+
+Elimina todos los stash de la lista.
+
+```
+$ git stash clear
+```
+Nota: Tambien se puede aplicar el stash, hacer un pull, hacer el unstash, aplicar nuestro commit para tratar de no tener un mergue automatico.
 ## Shortcuts
 
 Los shortcuts son atajos de los comandos, son como alias:
